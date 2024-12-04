@@ -11,3 +11,5 @@
 15:53:22	SELECT *  FROM degrees  WHERE level = 'magistrale'	38 row(s) returned	0.000 sec / 0.000 sec
 
 15:58:46	SELECT * FROM departments	12 row(s) returned	0.000 sec / 0.000 sec
+
+16:01:12	SELECT *  FROM teachers WHERE phone IS NULL	50 row(s) returned	0.000 sec / 0.000 sec
