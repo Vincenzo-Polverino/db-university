@@ -15,3 +15,5 @@
 16:01:12	SELECT *  FROM teachers WHERE phone IS NULL	50 row(s) returned	0.000 sec / 0.000 sec
 
 16:33:01	INSERT INTO students (name, surname, date_of_birth, degree_id, fiscal_code, enrolment_date, registration_number, email)  VALUES ('Roberto', 'Maligni', '1952-10-27', 7,'MLGRRT52R27D612Y','2024-12-04', '621033', 'maligni-roberto@evil.com')	1 row(s) affected	0.297 sec
+
+16:39:39	UPDATE teachers SET office_number = 126  WHERE id = 58	1 row(s) affected Rows matched: 1  Changed: 1  Warnings: 0	0.188 sec
