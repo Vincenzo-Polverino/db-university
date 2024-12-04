@@ -7,3 +7,5 @@
 15:42:34	SELECT * FROM courses WHERE period = 'I semestre' AND year = 1	286 row(s) returned	0.000 sec / 0.000 sec
 
 15:46:17	SELECT * FROM exams WHERE date = "2020-06-20" AND hour > "14:00:00"	21 row(s) returned	0.015 sec / 0.000 sec
+
+15:53:22	SELECT *  FROM degrees  WHERE level = 'magistrale'	38 row(s) returned	0.000 sec / 0.000 sec
