@@ -51,4 +51,15 @@ WHERE degrees.name = 'Corso di Laurea in Diritto dell\'Economia';
 15:57:43	SELECT students.name, students.surname FROM students JOIN degrees ON students.degree_id = degrees.id WHERE degrees.name = 'Corso di Laurea in Diritto dell\'Economia'	65 row(s) returned	0.000 sec / 0.000 sec
 
 
+
+(query 6)
+
+SELECT degrees.name
+FROM degrees
+JOIN departments ON degrees.department_id = departments.id
+WHERE departments.name = 'Dipartimento di Neuroscienze'
+AND level = 'magistrale';
+
+16:06:55	SELECT degrees.name FROM degrees JOIN departments ON degrees.department_id = departments.id WHERE departments.name = 'Dipartimento di Neuroscienze' AND level = 'magistrale'	1 row(s) returned	0.000 sec / 0.000 sec
+
 ``` 
