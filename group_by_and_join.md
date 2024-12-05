@@ -30,4 +30,13 @@ GROUP BY exam_id;
 15:34:57	SELECT exam_id, AVG(vote) AS media_voti FROM exam_student GROUP BY exam_id	4078 row(s) returned	0.000 sec / 0.031 sec
 
 
+
+(query 4)
+
+SELECT department_id, COUNT(*) AS numero_corsi_laurea
+FROM degrees
+GROUP BY department_id;
+
+15:39:24	SELECT department_id, COUNT(*) AS numero_corsi_laurea FROM degrees GROUP BY department_id	12 row(s) returned	0.000 sec / 0.000 sec
+
 ``` 
