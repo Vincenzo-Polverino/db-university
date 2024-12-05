@@ -39,4 +39,16 @@ GROUP BY department_id;
 
 15:39:24	SELECT department_id, COUNT(*) AS numero_corsi_laurea FROM degrees GROUP BY department_id	12 row(s) returned	0.000 sec / 0.000 sec
 
+
+
+(query 5)
+
+SELECT students.name, students.surname
+FROM students
+JOIN degrees ON students.degree_id = degrees.id
+WHERE degrees.name = 'Corso di Laurea in Diritto dell\'Economia';
+
+15:57:43	SELECT students.name, students.surname FROM students JOIN degrees ON students.degree_id = degrees.id WHERE degrees.name = 'Corso di Laurea in Diritto dell\'Economia'	65 row(s) returned	0.000 sec / 0.000 sec
+
+
 ``` 
