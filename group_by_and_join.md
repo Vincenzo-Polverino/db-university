@@ -86,4 +86,15 @@ ORDER BY students.surname, students.name;
 16:44:29	SELECT students.name, students.surname, degrees.name, departments.name FROM students JOIN degrees ON students.degree_id = degrees.id JOIN departments ON degrees.department_id = departments.id ORDER BY students.surname, students.name	5000 row(s) returned	0.094 sec / 0.000 sec
 
 
+
+(query 9)
+
+SELECT degrees.name AS nome_corsi_laurea, courses.name AS nome_corsi, teachers.name AS nome_insegnanti, teachers.surname AS cognome_insegnanti
+FROM degrees
+JOIN courses ON degrees.id = courses.id
+JOIN course_teacher ON courses.id = course_id
+JOIN teachers ON course_teacher.teacher_id = teachers.id;
+
+16:59:44	SELECT degrees.name AS nome_corsi_laurea, courses.name AS nome_corsi, teachers.name AS nome_insegnanti, teachers.surname AS cognome_insegnanti FROM degrees JOIN courses ON degrees.id = courses.id JOIN course_teacher ON courses.id = course_id JOIN teachers ON course_teacher.teacher_id = teachers.id	75 row(s) returned	0.000 sec / 0.000 sec
+
 ``` 
