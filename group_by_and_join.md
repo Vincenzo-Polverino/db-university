@@ -10,6 +10,10 @@ GROUP BY YEAR(enrolment_date);
 
 
 
+(query 2):
 
+SELECT office_address, COUNT(DISTINCT id) AS numero_insegnanti
+FROM teachers
+GROUP BY office_address;
 
 ``` 
