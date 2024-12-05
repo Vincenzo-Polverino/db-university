@@ -97,4 +97,18 @@ JOIN teachers ON course_teacher.teacher_id = teachers.id;
 
 16:59:44	SELECT degrees.name AS nome_corsi_laurea, courses.name AS nome_corsi, teachers.name AS nome_insegnanti, teachers.surname AS cognome_insegnanti FROM degrees JOIN courses ON degrees.id = courses.id JOIN course_teacher ON courses.id = course_id JOIN teachers ON course_teacher.teacher_id = teachers.id	75 row(s) returned	0.000 sec / 0.000 sec
 
+
+(query 10)
+
+SELECT teachers.name, teachers.surname
+FROM teachers
+JOIN course_teacher ON teachers.id = course_teacher.teacher_id
+JOIN courses ON course_teacher.course_id = courses.id
+JOIN degrees ON courses.degree_id = degrees.id
+JOIN departments ON degrees.department_id = departments.id
+WHERE departments.name = 'Dipartimento di Matematica';
+
+17:16:42	SELECT teachers.name, teachers.surname FROM teachers JOIN course_teacher ON teachers.id = course_teacher.teacher_id JOIN courses ON course_teacher.course_id = courses.id JOIN degrees ON courses.degree_id = degrees.id JOIN departments ON degrees.department_id = departments.id WHERE departments.name = 'Dipartimento di Matematica'	70 row(s) returned	0.031 sec / 0.000 sec
+
+
 ``` 
