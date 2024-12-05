@@ -62,4 +62,15 @@ AND level = 'magistrale';
 
 16:06:55	SELECT degrees.name FROM degrees JOIN departments ON degrees.department_id = departments.id WHERE departments.name = 'Dipartimento di Neuroscienze' AND level = 'magistrale'	1 row(s) returned	0.000 sec / 0.000 sec
 
+
+
+(query 7)
+
+SELECT *
+FROM course_teacher
+JOIN courses ON course_teacher.course_id = courses.id
+WHERE teacher_id = 44
+
+16:38:45	SELECT * FROM course_teacher JOIN courses ON course_teacher.course_id = courses.id WHERE teacher_id = 44	11 row(s) returned	0.000 sec / 0.000 sec
+
 ``` 
