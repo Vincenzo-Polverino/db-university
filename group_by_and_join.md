@@ -73,4 +73,17 @@ WHERE teacher_id = 44
 
 16:38:45	SELECT * FROM course_teacher JOIN courses ON course_teacher.course_id = courses.id WHERE teacher_id = 44	11 row(s) returned	0.000 sec / 0.000 sec
 
+
+
+(query 8)
+
+SELECT students.name, students.surname, degrees.name, departments.name
+FROM students
+JOIN degrees ON students.degree_id = degrees.id
+JOIN departments ON degrees.department_id = departments.id
+ORDER BY students.surname, students.name;
+
+16:44:29	SELECT students.name, students.surname, degrees.name, departments.name FROM students JOIN degrees ON students.degree_id = degrees.id JOIN departments ON degrees.department_id = departments.id ORDER BY students.surname, students.name	5000 row(s) returned	0.094 sec / 0.000 sec
+
+
 ``` 
